@@ -4,8 +4,9 @@ import styled from 'styled-components/native';
 import { CarDTO } from '../../dtos/CarDTO';
 import { RectButton } from 'react-native-gesture-handler';
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   flex: 1;
+  width: 100%;
 
   background-color: ${({theme}) => theme.colors.background_primary};
 `;
