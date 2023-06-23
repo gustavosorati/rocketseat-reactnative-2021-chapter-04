@@ -7,10 +7,10 @@ import LogoSvg from '../../assets/logo.svg';
 
 import Animated, { useSharedValue, useAnimatedStyle, withTiming, interpolate, Extrapolate, runOnJS } from 'react-native-reanimated';
 import { useNavigation } from '@react-navigation/native';
-import { StackParamList } from '../../routes/stack.routes';
+import { AuthParamsList } from '../../routes/auth.routes';
 
 export function Splash() {
-  const navigation = useNavigation<StackParamList>();
+  const navigation = useNavigation<AuthParamsList>();
 
   const splashAnimation = useSharedValue(0);
 
@@ -45,7 +45,7 @@ export function Splash() {
   })
 
   function startApp() {
-    navigation.navigate("Home")
+    navigation.navigate("SignIn");
   }
 
   useEffect(() => {

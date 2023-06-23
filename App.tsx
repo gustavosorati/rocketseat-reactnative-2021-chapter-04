@@ -10,6 +10,8 @@ import { Scheduling } from './src/screens/Scheduling';
 import { SchedulingDetails } from './src/screens/SchedulingDetails';
 import { SchedulingComplete } from './src/screens/SchedulingComplete';
 import { Routes } from './src/routes';
+import { AuthProvider } from './src/hooks/auth';
+import { AppProvider } from './src/hooks';
 
 
 export default function App() {
@@ -27,9 +29,11 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <GestureHandlerRootView style={{ flex: 1 }}>
-        <Routes />
-      </GestureHandlerRootView>
+      <AppProvider>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+          <Routes />
+        </GestureHandlerRootView>
+      </AppProvider>
     </ThemeProvider>
   );
 }

@@ -7,7 +7,7 @@ import { Accessory } from '../../components/Accessory';
 
 import { Button } from '../../components/Button';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import { StackParamList } from '../../routes/stack.routes';
+import { StackParamList } from '../../routes/app.tab.routes';
 import { CarDTO } from '../../dtos/CarDTO';
 import { getAccessoryIcon } from '../../utils/getAccessoryIcon';
 
@@ -107,8 +107,8 @@ export function CarDetails() {
           </Description>
 
           <Rent>
-            <Period>{car.rent.period}</Period>
-            <Price>R$ {car.rent.price}</Price>
+            <Period>{car.period}</Period>
+            <Price>R$ {car.price}</Price>
           </Rent>
         </Details>
 

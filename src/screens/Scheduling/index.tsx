@@ -7,7 +7,7 @@ import ArrowSvg from '../../assets/arrow.svg';
 import { Alert, StatusBar } from 'react-native';
 import { Button } from '../../components/Button';
 import { Calendar, MarkeDateProps } from '../../components/Calendar';
-import { StackParamList } from '../../routes/stack.routes';
+import { StackParamList } from '../../routes/app.tab.routes';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { DateData } from 'react-native-calendars';
 import { generateInterval } from '../../components/Calendar/generate-interval';

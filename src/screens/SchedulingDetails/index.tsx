@@ -8,7 +8,7 @@ import { Feather } from '@expo/vector-icons'
 import { RFValue } from 'react-native-responsive-fontsize';
 import { useTheme } from 'styled-components';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import { StackParamList } from '../../routes/stack.routes';
+import { StackParamList } from '../../routes/app.tab.routes';
 import { Accessory } from '../../components/Accessory';
 import { CarDTO } from '../../dtos/CarDTO';
 import { getAccessoryIcon } from '../../utils/getAccessoryIcon';

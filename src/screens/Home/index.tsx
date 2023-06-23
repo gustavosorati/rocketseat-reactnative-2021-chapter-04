@@ -10,7 +10,7 @@ import { Car } from '../../components/Car';
 
 import { LoadAnimation } from '../../components/LoadAnimation'
 
-import { StackParamList } from '../../routes/stack.routes';
+import { StackParamList } from '../../routes/app.tab.routes';
 import api from '../../services/api';
 import { CarDTO } from '../../dtos/CarDTO';
 import { Loading } from '../../components/Loading';
